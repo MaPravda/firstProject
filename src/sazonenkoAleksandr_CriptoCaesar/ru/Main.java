@@ -1,62 +1,23 @@
-package Command;
+package sazonenkoAleksandr_CriptoCaesar.ru;
 
-import Constants.Constants;
-import Methods.Cryptoservis;
-import Methods.Encryption;
+import sazonenkoAleksandr_CriptoCaesar.ru.Constants;
+import sazonenkoAleksandr_CriptoCaesar.ru.Cryptoservis;
+import sazonenkoAleksandr_CriptoCaesar.ru.constants.Constants;
 
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main extends Constants {
+
+
+
     public static void main(String[] args) {
-        Cryptoservis cryptoservis = new Cryptoservis() {
-            @Override
-            public String getPath1() {
-                return null;
-            }
 
-            @Override
-            public void setPath1(String path1) {
-
-            }
-
-            @Override
-            public String getPath2() {
-                return null;
-            }
-
-            @Override
-            public void setPath2(String path2) {
-
-            }
-
-            @Override
-            public String getPath3() {
-                return null;
-            }
-
-            @Override
-            public void setPath3(String path3) {
-
-            }
-
-            @Override
-            public int getKey() {
-                return 0;
-            }
-
-            @Override
-            public void setKey(int key) {
-
-            }
-        };
-
-        System.out.println("Введите команду которую хотите выполнить");
-        System.out.println("1 - Шифровать");
-        System.out.println("2 - Расшифровать");
-        System.out.println("3 - Brute Force");
-        System.out.println("4 - Анализ");
+        System.out.println(ENTER_THE_COMMAND);
+        System.out.println(ENCRIPTION);
+        System.out.println(DECODING);
+        System.out.println(BRUTE_FORCE);
+        System.out.println(ANALASIS);
         Scanner scanner = new Scanner(System.in);
         int value = scanner.nextInt();
 
@@ -69,6 +30,7 @@ public class Main extends Constants {
                 System.out.println(KEY);
                 int key = scanner.nextInt();
                 new Cryptoservis(path1, path2, key);
+                break;
             }
             case 2: {
                 System.out.println(FOR_DECRYPTION);
@@ -78,6 +40,7 @@ public class Main extends Constants {
                 System.out.println(KEY);
                 int key = scanner.nextInt();
                 new Cryptoservis(path1, path2, key);
+                break;
             }
             case 3: {
                 System.out.println(AT_THE_ENTRANCE);
@@ -87,6 +50,7 @@ public class Main extends Constants {
                 System.out.println(FOR_EXAMPLE);
                 String path3 = scanner.nextLine();
                 new Cryptoservis(path1, path2, path3);
+                break;
             }
             case 4: {
                 System.out.println(AT_THE_ENTRANCE);
@@ -95,7 +59,8 @@ public class Main extends Constants {
                 String path2 = scanner.nextLine();
                 System.out.println(FOR_EXAMPLE);
                 String path3 = scanner.nextLine();
-                new Cryptoservis(path1, path2, path3);
+                Cryptoservis(path1, path2, path3);
+
             }
         }
     }
