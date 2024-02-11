@@ -1,27 +1,53 @@
 package sazonenkoAleksandr_CriptoCaesar.ru.action;
 
-import sazonenkoAleksandr_CriptoCaesar.Decoding;
-import sazonenkoAleksandr_CriptoCaesar.Encryption;
-import sazonenkoAleksandr_CriptoCaesar.ru.DecodingAction;
-import sazonenkoAleksandr_CriptoCaesar.ru.Encryption;
 
-public interface Cryptoservis (String path1, String path2, String path3, int Key) {
+import sazonenkoAleksandr_CriptoCaesar.ru.streem.InputPath;
+import sazonenkoAleksandr_CriptoCaesar.ru.streem.OutputPath;
 
-private String path1;
-private String path2;
-private String path3;
-private int key;
-Cryptoservis getInstance() {
-    return DecodingAction;
-}
-Cryptoservis getInstance() {
+public class Cryptoservis {
+    private String inputAdressFile;
+    private String outputAdressFile;
+    private int key;
+    private String pathDictionary;
 
-    return Encryption;
+    public String getInputAdressFile() {
+        return inputAdressFile;
+    }
+
+    public void setInputAdressFile(String inputAdressFile) {
+        this.inputAdressFile = inputAdressFile;
+    }
+
+    public String getOutputAdressFile() {
+        return outputAdressFile;
+    }
+
+    public void setOutputAdressFile(String outputAdressFile) {
+        this.outputAdressFile = outputAdressFile;
+    }
+
+    public int getKey() {
+        return key;
+    }
+
+    public void setKey(int key) {
+        this.key = key;
+    }
+
+    public String getPathDictionary() {
+        return pathDictionary;
+    }
+
+    public void setPathDictionary(String pathDictionary) {
+        this.pathDictionary = pathDictionary;
+    }
+
+    public Cryptoservis(String inputAdressFile, String outputAdressFile, int key, String pathDictionary) {
+        this.inputAdressFile = inputAdressFile;
+        this.outputAdressFile = outputAdressFile;
+        this.key = key;
+        this.pathDictionary = pathDictionary;
+    }
 }
-static Cryptoservis getInstance(Cryptoservis BruteForce){
-    return BruteForce;
-}
-static Cryptoservis getInstance() {
-    return AnalysisAction;
-}
-}
+
+

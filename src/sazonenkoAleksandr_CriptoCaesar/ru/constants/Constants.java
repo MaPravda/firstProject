@@ -12,7 +12,7 @@ public class Constants {
     public static final String FOR_RECORDING = "Введите путь файла куда его нужно записать";
     public static final String FOR_EXAMPLE = "Введите путь файла примера";
     public static final String KEY = "Введите ключ";
-    private static final char[] ALPHABET = {'а', 'б', 'в', 'г', 'д', 'е', 'ж', 'з',
+    public static final char[] ALPHABET = {'а', 'б', 'в', 'г', 'д', 'е', 'ж', 'з',
             'и','к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ',
             'ъ', 'ы', 'ь', 'э', 'я', '.', ',', '«', '»', '"', '\'', ':', '!', '?', ' '};
 
